@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/alignerr_tasker.egg-info/PKG-INFO
+src/alignerr_tasker.egg-info/SOURCES.txt
+src/alignerr_tasker.egg-info/dependency_links.txt
+src/alignerr_tasker.egg-info/requires.txt
+src/alignerr_tasker.egg-info/top_level.txt
+src/domain/errors.py
+src/domain/task.py
+src/domain/ports/task_repository.py

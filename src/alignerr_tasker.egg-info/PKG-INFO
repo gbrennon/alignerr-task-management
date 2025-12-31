@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: alignerr-tasker
+Version: 0.1.0
+Summary: Alignerr Tasker project
+Author-email: User <user@example.com>
+Project-URL: homepage, https://github.com/gbrennon/alignerr-tasker
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
