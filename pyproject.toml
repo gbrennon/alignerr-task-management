@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=42", "wheel", "uv"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -10,7 +10,20 @@ authors = [{name="User", email="user@example.com"}]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest"]
+dev = ["pytest", "coverage", "pytest-cov"]
 
 [project.urls]
 homepage = "https://github.com/gbrennon/alignerr-tasker"
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+
+[tool.coverage.report]
+precision = 2
+skip_empty = true
+omit = ["*/__pycache__/*", "*/migrations/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov --no-header --cov-report=term-missing --cov-report=html"
