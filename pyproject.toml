@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alignerr-tasker"
+version = "0.1.0"
+description = "Alignerr Tasker project"
+authors = [{name="User", email="user@example.com"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+homepage = "https://github.com/gbrennon/alignerr-tasker"
